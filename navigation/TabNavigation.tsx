@@ -8,6 +8,7 @@ import Upcomings from "../screens/Upcomings";
 import Profile from "../screens/Profile";
 // Constants
 import { COLORS } from "../constants/styles";
+import { BlurView } from "expo-blur";
 
 // Navigation Stack
 const Tab = createBottomTabNavigator();
@@ -19,19 +20,17 @@ const TabNavigation = () => {
                 screenOptions={{
                     headerShown: false,
                     tabBarStyle: {
-                        backgroundColor: COLORS.black,
+                        backgroundColor: COLORS.background,
                         borderTopWidth: 0,
+                        height: 90,
+                        position: "absolute",
                         opacity: 0.9,
-                        height: 120,
                     },
-                    tabBarActiveTintColor: COLORS.white,
+                    tabBarActiveTintColor: COLORS.primary,
                     tabBarInactiveTintColor: COLORS.gray,
                     tabBarLabelStyle: {
                         fontFamily: "Poppins-Regular",
                         fontSize: 12,
-                    },
-                    tabBarItemStyle: {
-                        marginBottom: 24,
                     },
                 }}
             >
@@ -58,7 +57,6 @@ const TabNavigation = () => {
                     component={Profile}
                     options={{
                         tabBarLabel: "Profile",
-
                         tabBarIcon: ({ color }) => <User color={color} />,
                     }}
                 />

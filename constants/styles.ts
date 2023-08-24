@@ -9,4 +9,5 @@ export const COLORS = {
     blue: "#188FAD",
     yellow: "#FFD500",
     background: "#0f0f0f",
+    backgroundOpacity: "rgba(0, 0, 0, 0.5)",
 };

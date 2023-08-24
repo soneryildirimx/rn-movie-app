@@ -1,4 +1,4 @@
-import { View, Text, AppRegistry } from "react-native";
+import { View, Text } from "react-native";
 import MainNavigation from "./navigation/MainNavigation";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
